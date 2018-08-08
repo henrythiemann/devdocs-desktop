@@ -27,7 +27,7 @@ function updateMenu(opts) {
 
 function createMenu(opts) {
   const toggleAppAccelerator =
-    config.get('shortcut.toggleApp') || 'CmdOrCtrl+Shift+D'
+    config.get('shortcut.toggleApp') || 'Option+Space'
   const toggleAppAcceleratorRegistered = globalShortcut.isRegistered(
     toggleAppAccelerator
   )
