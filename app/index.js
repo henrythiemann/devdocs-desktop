@@ -36,8 +36,11 @@ if (isAlreadyRunning) {
 function toggleWindow() {
   if (mainWindow.isVisible()) {
     mainWindow.hide()
+    app.hide()
+    mainWindow.setVisibleOnAllWorkspaces(true)
   } else {
     mainWindow.show()
+    mainWindow.setVisibleOnAllWorkspaces(false)
   }
 }
 
